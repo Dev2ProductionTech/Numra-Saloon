@@ -21,6 +21,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Copy public assets
+        run: cp -r public/* dist/
       - name: Verify build output
         run: ls -R dist
       - name: Deploy
