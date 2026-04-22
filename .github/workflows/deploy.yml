@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: npm run clean && npm run build
       - name: Copy images to dist
-        run: cp -r images dist/
+        run: cp -r images dist/assets
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
